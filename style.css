@@ -1,0 +1,166 @@
+/* league-spartan-regular - latin */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./assets/fonts/league-spartan-v4-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/league-spartan-v4-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* league-spartan-500 - latin */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('./assets/fonts/league-spartan-v4-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/league-spartan-v4-latin-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* league-spartan-700 - latin */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('./assets/fonts/league-spartan-v4-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/league-spartan-v4-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variable Properties */
+:root {
+  --main-bkg-color: #deb887;
+  --dark-brown: #7c2f29;
+  --light-brown: #a52a2a;
+  --vlight-brown: #a5572a;
+  --alt-black: #0e1117;
+  --alt-gray: #5c5c5c;
+  --alt-white: #f9f9f9;
+}
+
+/* Body */
+body {
+  background-image: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
+  font-family: 'League Spartan', Helvetica, sans-serif;
+  font-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Menu Container */
+.menu-container {
+  background-color: var(--main-bkg-color);
+  margin: 0 auto;
+  width: 90%;
+  max-width: 37em;
+}
+
+header {
+  text-align: center;
+  margin: 1.5em 0 1em 0;
+}
+
+.hr {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  border-style: none;
+  height: 3px;
+  background-color: var(--dark-brown);
+  width: 85%;
+}
+
+main {
+  padding: 1em 0;
+}
+
+header h1 {
+  text-transform: uppercase;
+  margin-bottom: 0.125em;
+}
+
+.est {
+  font-style: italic;
+}
+
+.coffee-menu h2,
+.dessert-menu h2 {
+  text-align: center;
+}
+
+.menu-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  padding: 1em 3em;
+}
+
+.pricing p {
+  font-size: 1.25rem;
+}
+
+.dessert-pricing {
+  padding-bottom: 0.25em;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer */
+footer {
+  margin: 1em 0;
+}
+
+footer p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--alt-black);
+}
+
+footer a:hover {
+  color: var(--light-brown);
+}
+
+footer a:active {
+  color: var(--vlight-brown);
+}
+
+footer a:visited {
+  color: var(--alt-gray);
+}
+
+.address {
+  margin: 0.5em;
+}
